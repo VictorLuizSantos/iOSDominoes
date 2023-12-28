@@ -7,20 +7,20 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
+    // Model ou ViewModel?
     private var counterValue1: Int = 0
     private var counterValue2: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.systemBackground
-        self.view.addSubview(dupla1)
-        navigationItem.title = "Dominoes Counter"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        setConstrains()
+        addViews()
+        setStyle()
     }
     
-    private lazy var dupla1: UILabel = {
+    private lazy var team1: UILabel = {
         var label = UILabel()
         label.text = "Teste"
         label.font = .systemFont(ofSize: 22)
@@ -46,6 +46,46 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
+    
+    private lazy var team1Plus5: UIButton = {
+       var button = UIButton()
+        button.setImage(UIImage(named: ""), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var team1Plus10: UIButton = {
+       var button = UIButton()
+        button.setImage(UIImage(named: ""), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var team1Plus50: UIButton = {
+       var button = UIButton()
+        button.setImage(UIImage(named: ""), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var team2Plus5: UIButton = {
+       var button = UIButton()
+        button.setImage(UIImage(named: ""), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var team2Plus10: UIButton = {
+       var button = UIButton()
+        button.setImage(UIImage(named: ""), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var team2Plus50: UIButton = {
+       var button = UIButton()
+        button.setImage(UIImage(named: ""), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
 }
-
