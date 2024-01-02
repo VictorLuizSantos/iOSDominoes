@@ -20,16 +20,7 @@ final class MainViewController: UIViewController {
         setStyle()
     }
     
-    private lazy var team1: UILabel = {
-        var label = UILabel()
-        label.text = "Teste"
-        label.font = .systemFont(ofSize: 22)
-        label.textColor = .green
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    private lazy var counter1: UILabel = {
+    lazy var counter1: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 22)
         label.textColor = .green
@@ -38,7 +29,7 @@ final class MainViewController: UIViewController {
         return label
     }()
     
-    private lazy var counter2: UILabel = {
+    lazy var counter2: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 22)
         label.textColor = .green
@@ -47,45 +38,105 @@ final class MainViewController: UIViewController {
         return label
     }()
     
-    private lazy var team1Plus5: UIButton = {
+    // MARK: - TEAM 1 PLUS
+    lazy var team1Plus5: UIButton = {
        var button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
+        button.setTitle("5", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var team1Plus10: UIButton = {
+    lazy var team1Plus10: UIButton = {
        var button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
+        button.setTitle("10", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var team1Plus50: UIButton = {
+    lazy var team1Plus50: UIButton = {
        var button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
+        button.setTitle("50", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var team2Plus5: UIButton = {
+    // MARK: - TEAM 1 MINUS
+    lazy var team1Minus5: UIButton = {
        var button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
+        button.setTitle("5", for: .normal)
+        button.setTitleColor(.red, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var team2Plus10: UIButton = {
+    lazy var team1Minus10: UIButton = {
        var button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
+        button.setTitle("10", for: .normal)
+        button.setTitleColor(.red, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var team2Plus50: UIButton = {
+    lazy var team1Minus50: UIButton = {
        var button = UIButton()
-        button.setImage(UIImage(named: ""), for: .normal)
+        button.setTitle("50", for: .normal)
+        button.setTitleColor(.red, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    // MARK: - TEAM 2 PLUS
+    lazy var team2Plus5: UIButton = {
+       var button = UIButton()
+        button.setTitle("5", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var team2Plus10: UIButton = {
+       var button = UIButton()
+        button.setTitle("10", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var team2Plus50: UIButton = {
+       var button = UIButton()
+        button.setTitle("50", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    // MARK: - TEAM 2 MINUS
+    lazy var team2Minus5: UIButton = {
+       var button = UIButton()
+        button.setTitle("5", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var team2Minus10: UIButton = {
+       var button = UIButton()
+        button.setTitle("10", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var team2Minus50: UIButton = {
+       var button = UIButton()
+        button.setTitle("50", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    
 }
